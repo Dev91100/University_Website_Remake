@@ -37,8 +37,12 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+              <Link 
+                to='/' 
+                className='nav-links' 
+                onClick={closeMobileMenu}
+              >
+                About Us
               </Link>
             </li>
             <li className='nav-item'>
@@ -47,7 +51,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                Study At UoM
               </Link>
             </li>
             <li className='nav-item'>
@@ -56,7 +60,25 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Faculties
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/products'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Campus Facilities
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/products'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Centres/Offices
               </Link>
             </li>
 
