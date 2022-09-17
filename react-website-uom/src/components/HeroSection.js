@@ -14,6 +14,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+          navigateTo={'/faculties'}
         >
           GET STARTED
         </Button>
@@ -21,7 +22,15 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
+          onClick={(e) => {
+            //Prevents window.open to exceute when the page frist loads
+            //Youtube link to a cinematic video on the University 
+            e.preventDefault();
+            window.open("https://www.youtube.com/watch?v=p02oMNoci0U", "_blank");
+            }}
+          // onClick={window.open("https://www.youtube.com/watch?v=p02oMNoci0U", "_blank")}
+          // onClick={parent.open("https://www.youtube.com/watch?v=p02oMNoci0U")}
+          // onClick={window.location.href='https://www.youtube.com/watch?v=p02oMNoci0U'}
         >
           WATCH TRAILER <i className='far fa-play-circle' />
         </Button>
